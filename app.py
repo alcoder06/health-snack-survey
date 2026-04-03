@@ -254,46 +254,64 @@ st.markdown("""
 
     html, body, [class*="css"] {
         font-family: 'DM Sans', sans-serif;
-        background-color: #f7f8fc;
+        background-color: #ffffff !important;
+        color: #000000 !important;
     }
 
-    /* ── Global text overrides so Streamlit themes don't hide text ── */
+    /* ── Force Streamlit app background to white ── */
+    .stApp {
+        background-color: #ffffff !important;
+    }
+
+    .block-container {
+        background-color: #ffffff !important;
+    }
+
+    /* ── Global text overrides — all black ── */
+    p, span, div, label, li, a,
     .stMarkdown p, .stMarkdown li, .stMarkdown span,
     label, .stRadio label, .stSelectbox label,
-    .stTextInput label, .stFileUploader label {
-        color: #1a1a2e !important;
+    .stTextInput label, .stFileUploader label,
+    .stMarkdown, .stText, .stCaption,
+    [class*="css"] {
+        color: #000000 !important;
     }
 
     /* ── Titles ── */
     .survey-title {
         font-family: 'DM Serif Display', serif;
         font-size: 2.6rem;
-        color: #1a1a2e !important;
+        color: #000000 !important;
         line-height: 1.15;
         margin-bottom: 0.2rem;
     }
 
     .survey-subtitle {
         font-size: 1.05rem;
-        color: #444 !important;
+        color: #000000 !important;
         margin-bottom: 2rem;
     }
 
     /* ── Cards ── */
     .card {
-        background: #ffffff;
+        background: #f8f9fa;
         border-radius: 16px;
         padding: 2rem 2.2rem;
         box-shadow: 0 4px 24px rgba(0,0,0,0.08);
         margin-bottom: 1.5rem;
-        border: 1px solid #e8eaf0;
+        border: 1px solid #dee2e6;
+        color: #000000 !important;
+    }
+
+    .card p, .card span, .card div, .card label {
+        color: #000000 !important;
     }
 
     /* ── Question page ── */
     .question-chip {
         display: inline-block;
         background: #eef2ff;
-        color: #4f46e5 !important;
+        color: #000000 !important;
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 0.08em;
@@ -304,32 +322,32 @@ st.markdown("""
     }
 
     .question-card {
-        background: #ffffff;
+        background: #f8f9fa;
         border-radius: 16px;
         padding: 1.8rem 2rem;
-        border: 2px solid #e8eaf0;
+        border: 2px solid #dee2e6;
         margin-bottom: 1.2rem;
-        box-shadow: 0 2px 12px rgba(79,70,229,0.07);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
 
     .question-text {
         font-size: 1.2rem !important;
         font-weight: 600 !important;
-        color: #1a1a2e !important;
+        color: #000000 !important;
         line-height: 1.55;
         margin: 0 0 0.3rem 0;
     }
 
-    /* Radio option labels — force dark text */
+    /* Radio option labels — force black text */
     .stRadio > div > label,
     .stRadio > div > label > div,
     .stRadio > div > label span {
-        color: #1a1a2e !important;
+        color: #000000 !important;
         font-size: 1rem !important;
         font-weight: 400 !important;
     }
 
-    /* ── Result box ── */
+    /* ── Result box (keeps colored bg, white text inside) ── */
     .result-box {
         border-radius: 20px;
         padding: 2.5rem 2rem;
@@ -373,9 +391,9 @@ st.markdown("""
     .section-header {
         font-family: 'DM Serif Display', serif;
         font-size: 1.5rem;
-        color: #1a1a2e !important;
+        color: #000000 !important;
         margin-bottom: 1rem;
-        border-bottom: 2px solid #eef2ff;
+        border-bottom: 2px solid #dee2e6;
         padding-bottom: 0.4rem;
     }
 
@@ -383,11 +401,11 @@ st.markdown("""
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 0;
-        border-bottom: 1px solid #f0f0f5;
+        border-bottom: 1px solid #e9ecef;
         font-size: 0.95rem;
     }
-    .info-key { color: #666 !important; font-weight: 500; }
-    .info-val { color: #1a1a2e !important; font-weight: 700; }
+    .info-key { color: #333333 !important; font-weight: 500; }
+    .info-val { color: #000000 !important; font-weight: 700; }
 
     /* ── Buttons ── */
     .stButton > button {
@@ -407,7 +425,30 @@ st.markdown("""
         transform: translateY(-1px);
     }
 
-    hr { border: none; border-top: 1px solid #e8eaf0; margin: 1.5rem 0; }
+    /* ── Input fields ── */
+    .stTextInput input {
+        background-color: #f8f9fa !important;
+        color: #000000 !important;
+        border: 1px solid #ced4da !important;
+    }
+
+    .stSelectbox > div > div {
+        background-color: #f8f9fa !important;
+        color: #000000 !important;
+    }
+
+    /* ── Selectbox dropdown text ── */
+    .stSelectbox [data-baseweb="select"] span,
+    .stSelectbox [data-baseweb="select"] div {
+        color: #000000 !important;
+    }
+
+    /* ── Caption / footer ── */
+    .stCaption, caption, small {
+        color: #333333 !important;
+    }
+
+    hr { border: none; border-top: 1px solid #dee2e6; margin: 1.5rem 0; }
 
     /* ══════════════════════════════════
        CONFETTI CELEBRATION ANIMATION
@@ -436,7 +477,7 @@ st.markdown("""
     .celebration-banner .congrats-text {
         font-family: 'DM Serif Display', serif;
         font-size: 1.6rem;
-        color: #1a1a2e !important;
+        color: #000000 !important;
         margin-top: 0.3rem;
     }
 
