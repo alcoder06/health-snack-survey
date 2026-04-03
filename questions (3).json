@@ -1,0 +1,92 @@
+[
+    {
+        "text": "How often do you choose nutritious snacks (fruits, nuts, yogurt) during study sessions?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    },
+    {
+        "text": "How frequently do you experience an energy crash or sudden fatigue in the afternoon?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do you consume ultra-processed snacks (chips, candy, fast food) while studying?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do snacks noticeably help you stay focused and mentally sharp?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    },
+    {
+        "text": "How often do you feel sluggish or drowsy shortly after eating a snack?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do you plan your snacks in advance to support your study schedule?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    },
+    {
+        "text": "How often do you consume high-sugar drinks (sodas, energy drinks) during study sessions?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do you feel mentally alert and clear-headed after eating?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    },
+    {
+        "text": "How often do you skip snacks or meals and then feel too tired to study effectively?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do your overall eating habits support stable, consistent energy throughout the day?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    },
+    {
+        "text": "How often do you feel physically tired even after eating a full meal or snack?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do you pick snacks purely out of convenience, without thinking about their nutritional value?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do your snacking habits noticeably affect your academic productivity?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    },
+    {
+        "text": "How often do you struggle to concentrate specifically because you feel low on energy?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [0, 1, 2, 3, 4],
+        "positive": false
+    },
+    {
+        "text": "How often do you feel genuinely energized and motivated after eating a snack during study time?",
+        "options": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+        "scores": [4, 3, 2, 1, 0],
+        "positive": true
+    }
+]
